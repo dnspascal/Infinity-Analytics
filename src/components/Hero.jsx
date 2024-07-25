@@ -1,4 +1,4 @@
-import Typed from 'react-typed';
+import {Typed} from 'react-typed';
 
 export const Hero = () => {
     return (<div className="text-white">
