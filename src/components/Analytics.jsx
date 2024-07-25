@@ -7,7 +7,7 @@ function Analytics(){
                <div className='flex flex-col justify-center'>
                 <p className='text-[#00df9a] font-bold'>DATA ANALYTICS DASHBOARD</p>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Manage Data Analytics Centrally</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sint dolorem nam earum modi assumenda magni, dolore doloremque quasi aspernatur facilis enim neque harum aliquam voluptatem? Rerum dicta vero iure?</p>
+                <p>Infinity is a leader in data analytics, providing comprehensive solutions to unlock the full potential of your data. Our advanced analytics help businesses make informed decisions and achieve their goals</p>
                 <button className='text-[#00df9a] w-[200px] rounded-md font-medium my-6 py-3 mx-auto md:mx-0 px-6 bg-black'>Get Started</button>
                </div>
             </div>

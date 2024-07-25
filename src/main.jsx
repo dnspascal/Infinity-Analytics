@@ -1,6 +1,5 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import React from 'react'
 import './index.css'
 import App from './app';
 
@@ -9,11 +8,9 @@ import App from './app';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App/>}/>
-            
-        </Routes>
+    <React.StrictMode>
 
-    </BrowserRouter>
+        <App/>
+
+    </React.StrictMode>
 )

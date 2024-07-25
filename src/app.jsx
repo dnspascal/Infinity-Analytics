@@ -1,21 +1,38 @@
-import Analytics from "./components/Analytics";
-import Card from "./components/Cards";
 import Footer from "./components/Footer";
-import { Hero } from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Newaletter from "./components/Newsletter";
+import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import Home from "./pages/home.jsx";
+import Company from "./pages/company.jsx";
+import Resources from "./pages/resources.jsx";
+import About from "./pages/about.jsx";
+import Contacts from "./pages/contacts.jsx";
+
+
+
+ const Skeleton = () =>{
+     return(
+        <div>
+            <Navbar/>
+            <Outlet/>
+            <Footer/>
+        </div>
+     );
+ }
 
 
 function App(){
     return(
-        <div>
-       <Navbar/>
-       <Hero/>
-       <Analytics/>
-       <Newaletter/>
-       <Card/>
-       <Footer/>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path={"/"} element={<Skeleton/>}>
+                    <Route path={"/"} element={<Home/>}/>
+                    <Route path={"/company"} element={<Company/>}/>
+                    <Route path={"/resources"} element={<Resources/>}/>
+                    <Route path={"/about"} element={<About/>}/>
+                    <Route path={"/contacts"} element={<Contacts/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
 export default App;
